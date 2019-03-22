@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="VueJS:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/VueJS_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="VueJS/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="VueJS" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

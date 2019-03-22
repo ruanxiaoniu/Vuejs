@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+    <script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>
+
+</head>
+<body>
+<!--v-on:缩写@
+        v-bind:缩写:-->
+<div id="app">
+    <input type="button" value="走起" @click="Show"/>
+    <input type="button" value="停止"/>
+    <p>{{message}}</p>
+</div>
+<script>
+    var vm=new Vue({
+        el:"#app",
+        data:{
+            message:"好好学习，天天向上！！！"
+        },
+        //使用一个计时器,定时进行以下操作
+
+        methods:{
+
+            Show:function(){
+                var s=this
+               /* var c=s.message.substring(0,1)
+                s.message=c;
+                //console.log(this.message)
+               /* var _this=this*/
+                setInterval(function(){
+                    console.log(s.message)
+
+                    var start=s.message.substring(0,1)
+                    document.write(start)
+
+                },400)
+            }
+        }
+    })
+</script>
+</body>
+</html>
